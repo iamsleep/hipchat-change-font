@@ -11,9 +11,9 @@ s/font-family: Helvetica Neue,/font-family: Consolas, Helvetica Neue,/g;
 s/monospace;\n(\ *)font-size: 12px;/monospace;\n$1font-size: 14px;/g;
 
 # change color theme
-s/2472ad/89B1DD/g
-s/205081/89B1DD/g
-s/3572b0/9D84DF/g
+s/2472ad/89B1DD/g;
+s/205081/89B1DD/g;
+s/3572b0/9D84DF/g;
 
 s/\/\*# sourceMappingURL=hipchat-client.css.map \*\/\n(\ *)<\/style>/\/\*# sourceMappingURL=hipchat-client.css.map \*\/\n$1#hipchat .hc-left-sidebar-col,\n#hipchat .hc-right-sidebar-col {\n  font-family: Consolas, sans-serif !important;\n}\n<\/style>/g
 ' ~/chat.html
