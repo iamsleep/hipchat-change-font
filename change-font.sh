@@ -3,6 +3,7 @@
 # i for inline replace
 # p for loop
 # e for one line expression
+# change color theme
 cp /Applications/HipChat.app/Contents/Resources/chat.html ~/chat.html.orig
 cp /Applications/HipChat.app/Contents/Resources/chat.html ~/chat.html
 perl -0p -i.bak -e '
@@ -10,7 +11,7 @@ s/font-family: Menlo,/font-family: Cosolas, Menlo,/g;
 s/font-family: Helvetica Neue,/font-family: Consolas, Helvetica Neue,/g;
 s/monospace;\n(\ *)font-size: 12px;/monospace;\n$1font-size: 14px;/g;
 
-# change color theme
+
 s/2472ad/89B1DD/g;
 s/205081/89B1DD/g;
 s/3572b0/9D84DF/g;
